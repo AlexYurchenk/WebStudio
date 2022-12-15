@@ -1,0 +1,48 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+@each $icons in antenna, clock, diagram, astronaut {
+    .icon-#{$icons}::before {
+        content: '';
+
+        display: block;
+
+        width: 270px;
+        height: 120px;
+
+        background-color: $team-bgc;
+
+        background-image: url('../../images/svg/#{$icons}.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 4px;
+
+        margin-bottom: 30px;
+    }
+}
+@mixin icon($width, $height) {
+    width: $width;
+    height: $height;
+    color: currentColor;
+    fill: currentColor;
+}
+
+%center {
+    display: flex;
+    align-items: center;
+}
+%transition-common {
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+}

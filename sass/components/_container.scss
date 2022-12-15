@@ -1,0 +1,18 @@
+.container {
+    @extend %center;
+
+    max-width: $mobile-container-width;
+    height: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $tal-container-width) {
+        max-width: $tal-container-width;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        max-width: $desktop-container-width;
+    }
+}

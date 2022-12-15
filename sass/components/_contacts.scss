@@ -1,0 +1,71 @@
+.contacts {
+    @media screen and (max-width: calc($tal-container-width - 1px)) {
+        margin-bottom: 64px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+}
+
+.contacts__item {
+    @extend %center;
+    @extend %transition-common;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+        @media screen and (max-width: calc($tal-container-width - 1px)) {
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width: $desktop-container-width) {
+            margin-bottom: 0%;
+            margin-right: 50px;
+        }
+    }
+
+    transition-property: color, fill;
+
+    &:hover,
+    &:focus-within {
+        color: $blue;
+        fill: $blue;
+    }
+}
+
+.contacts__link {
+    @media screen and (max-width: calc($tal-container-width - 1px)) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16em;
+        letter-spacing: 0.02em;
+        &--blue {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.176;
+
+            color: $blue;
+        }
+    }
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16em;
+
+    letter-spacing: 0.02em;
+    @media screen and (min-width: $desktop-container-width) {
+        font-size: 14px;
+        line-height: 1.14em;
+        height: 100%;
+    }
+}
+.contacts__icon {
+    @media screen and (max-width: calc($tal-container-width - 1px)) {
+        display: none;
+    }
+    @extend %center;
+    fill: inherit;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    margin-right: 10px;
+}
