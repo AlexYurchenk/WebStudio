@@ -14,3 +14,35 @@
 .control-button__icon {
     @include icon(auto, 100%);
 }
+.modal__close-button {
+    @extend %transition-common;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+
+    color: $black;
+    fill: currentColor;
+
+    border-radius: 50%;
+
+    border: 1px solid $btn-model-close-color;
+
+    background-color: $white;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    transition-property: fill, color;
+    &:hover,
+    &:focus {
+        color: $blue;
+    }
+}
+.close-button__icon {
+    height: 11px;
+    width: 11px;
+    fill: currentColor;
+    color: currentColor;
+}

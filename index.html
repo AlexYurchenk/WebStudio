@@ -101,6 +101,22 @@
                 </div>
             </div>
         </header>
+        <main>
+            <section class="hero">
+                <div class="container hero__container">
+                    <h1 class="hero__title">
+                        Эффективные решения для вашего бизнеса
+                    </h1>
+                    <button
+                        class="hero__button button"
+                        type="button"
+                        data-modal-open
+                    >
+                        Заказать услугу
+                    </button>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__wrapper">
@@ -201,6 +217,94 @@
                 </div>
             </div>
         </footer>
+        <div class="overlay is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close class="modal__close-button">
+                    <svg class="close-button__icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <b class="modal__title"
+                    >Оставьте свои данные, мы вам перезвоним</b
+                >
+                <form class="modal__form form" action="">
+                    <p class="form__wrapper">
+                        <input
+                            class="form__input"
+                            name="name"
+                            type="text"
+                            id="name"
+                            placeholder="Фамилия Имя Отчество"
+                        />
+                        <svg class="form__icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                        <label class="form__label">Имя </label>
+                    </p>
+
+                    <p class="form__wrapper">
+                        <input
+                            class="form__input"
+                            name="name"
+                            type="tel"
+                            id="name"
+                            placeholder="+380 **-**-**-***"
+                        />
+                        <svg class="form__icon">
+                            <use
+                                href="./images/sprite.svg#icon-phone-model"
+                            ></use>
+                        </svg>
+                        <label class="form__label">Телефон</label>
+                    </p>
+                    <p class="form__wrapper">
+                        <input
+                            class="form__input"
+                            name="name"
+                            type="email"
+                            id="name"
+                            placeholder="name@mail.com"
+                        />
+                        <svg class="form__icon">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <label class="form__label">Почта</label>
+                    </p>
+
+                    <p class="form__textarea">
+                        <textarea
+                            placeholder="Введите текст"
+                            class="textarea"
+                            name="comments"
+                            id="comments"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                        <label class="textarea__label" for="comments"
+                            >Комментарий</label
+                        >
+                    </p>
+
+                    <label class="form__agreement agreement">
+                        <input
+                            class="agreement__checkbox"
+                            type="checkbox"
+                            value="agreement"
+                            name="agreement"
+                            id="agreement"
+                        />
+                        <span class="agreement__icon"></span>
+                        Соглашаюсь с рассылкой и принимаю<a
+                            href=""
+                            class="agreement__link"
+                            >Условия договора</a
+                        >
+                    </label>
+
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
     </body>
     <script src="./js/modal.js"></script>
 </html>

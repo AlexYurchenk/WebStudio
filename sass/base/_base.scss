@@ -1,7 +1,7 @@
 img {
     display: block;
 
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 button {
@@ -19,6 +19,9 @@ body {
     color: $main-text-color;
     font-family: $font-family-main;
     fill: $main-text-color;
+    &.model-is-open {
+        overflow-y: hidden;
+    }
 }
 a {
     text-decoration: none;

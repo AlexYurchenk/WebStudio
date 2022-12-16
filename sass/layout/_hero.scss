@@ -1,0 +1,56 @@
+.hero {
+    @media screen and (max-width: calc($desktop-container-width - 1px)) {
+        padding-top: 118x;
+        padding-bottom: 118px;
+    }
+
+    background: $hero-bgc;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container {
+    @extend %center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    @media screen and (max-width: calc($desktop-container-width - 1px)) {
+        font-size: 26px;
+        line-height: 1.615em;
+        display: inline-block;
+        max-width: 360px;
+    }
+    margin-bottom: 30px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $white;
+
+    max-width: 696px;
+}
+.hero__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
