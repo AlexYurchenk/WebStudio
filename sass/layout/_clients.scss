@@ -1,0 +1,65 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop-container-width) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.clients__container {
+    display: block;
+}
+.clients__title {
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop-container-width) {
+        margin-bottom: 50px;
+    }
+}
+
+.clients__list {
+    width: 100%;
+    @extend %center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.clients__item {
+    width: calc((100% - 30px) / 2);
+    @media screen and (min-width: $tal-container-width) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        width: calc((100% - 150px) / 6);
+    }
+}
+
+.clients__link {
+    @extend %transition-common;
+    @extend %center;
+
+    width: 100%;
+    height: 92px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    justify-content: center;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    color: $icon-color;
+    fill: $icon-color;
+
+    transition-property: border, color, fill;
+    &:hover,
+    &:focus {
+        color: $blue;
+        fill: $blue;
+        border: 1px solid $blue;
+    }
+}
+
+.clients__icon {
+    @include icon(auto, 100%);
+}

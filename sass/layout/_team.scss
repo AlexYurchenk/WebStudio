@@ -1,0 +1,29 @@
+.team {
+    background: $team-bgc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop-container-width) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.team__container {
+    display: block;
+}
+.team__title {
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop-container-width) {
+        margin-bottom: 50px;
+    }
+}
+.team__list {
+    @extend %center;
+
+    flex-direction: column;
+    width: 100%;
+    @media screen and (min-width: $tal-container-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

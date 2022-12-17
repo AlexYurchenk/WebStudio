@@ -1,0 +1,56 @@
+.activity {
+    padding-bottom: 94px;
+    @media screen and (max-width: calc($desktop-container-width - 1px)) {
+        display: none;
+    }
+}
+.activity__container {
+    display: block;
+}
+.activity__title {
+    margin-bottom: 50px;
+}
+
+.activity__list {
+    @extend %center;
+}
+
+.activity__item {
+    position: relative;
+    margin-right: 30px;
+    width: 370px;
+    height: 294px;
+    &:last-child {
+        margin-right: 0%;
+    }
+}
+
+.activity__meta {
+    @extend %center;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    height: 70px;
+    width: 100%;
+
+    background-color: $activity-meta-bgc;
+
+    justify-content: center;
+}
+
+.activity__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0%;
+
+    color: $white;
+}
+.activity__images {
+    width: 370px;
+    height: 294px;
+}
