@@ -281,7 +281,7 @@ address {
   width: 100%;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url("../../images/svg/antenna.svg");
+  background-image: url(../../images/svg/antenna.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -294,7 +294,7 @@ address {
   width: 100%;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url("../../images/svg/clock.svg");
+  background-image: url(../../images/svg/clock.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -307,7 +307,7 @@ address {
   width: 100%;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url("../../images/svg/diagram.svg");
+  background-image: url(../../images/svg/diagram.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -320,7 +320,7 @@ address {
   width: 100%;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url("../../images/svg/astronaut.svg");
+  background-image: url(../../images/svg/astronaut.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
