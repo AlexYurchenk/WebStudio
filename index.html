@@ -674,7 +674,7 @@
                 </div>
                 <div class="footer__wrapper">
                     <b class="footer__title">Подпишитесь на рассылку</b>
-                    <form class="footer__form" action="">
+                    <form class="footer__form">
                         <input
                             autocomplete="email"
                             class="footer__input"
@@ -701,7 +701,7 @@
                 <b class="modal__title"
                     >Оставьте свои данные, мы вам перезвоним</b
                 >
-                <form class="modal__form form" action="">
+                <form class="modal__form form">
                     <p class="form__wrapper">
                         <input
                             class="form__input"
@@ -713,15 +713,15 @@
                         <svg class="form__icon">
                             <use href="./images/sprite.svg#icon-person"></use>
                         </svg>
-                        <label class="form__label">Имя </label>
+                        <label for="name" class="form__label">Имя </label>
                     </p>
 
                     <p class="form__wrapper">
                         <input
                             class="form__input"
-                            name="name"
+                            name="tel"
                             type="tel"
-                            id="name"
+                            id="tel"
                             placeholder="+380 **-**-**-***"
                         />
                         <svg class="form__icon">
@@ -729,20 +729,20 @@
                                 href="./images/sprite.svg#icon-phone-model"
                             ></use>
                         </svg>
-                        <label class="form__label">Телефон</label>
+                        <label for="tel" class="form__label">Телефон</label>
                     </p>
                     <p class="form__wrapper">
                         <input
                             class="form__input"
-                            name="name"
+                            name="email"
                             type="email"
-                            id="name"
+                            id="email"
                             placeholder="name@mail.com"
                         />
                         <svg class="form__icon">
                             <use href="./images/sprite.svg#icon-mail"></use>
                         </svg>
-                        <label class="form__label">Почта</label>
+                        <label for="email" class="form__label">Почта</label>
                     </p>
 
                     <p class="form__textarea">
@@ -779,6 +779,6 @@
                 </form>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
-    <script src="./js/modal.js"></script>
 </html>
