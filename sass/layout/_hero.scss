@@ -8,15 +8,15 @@
 
     padding-top: 200px;
     padding-bottom: 200px;
-
+    background-image: url(../../images/hero/mobile/Header.jpg);
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
         image-set(
-            url('../../images/hero/mobile/Header.jpg') 1x,
-            url('../../images/hero/mobile/Header@2x.jpg') 2x,
-            url('../../images/hero/mobile/Header@3x.jpg') 3x
+            url(../../images/hero/mobile/Header.jpg) 1x,
+            url(../../images/hero/mobile/Header@2x.jpg) 2x,
+            url(../../images/hero/mobile/Header@3x.jpg) 3x
         );
     background-repeat: no-repeat;
     background-position: center;
@@ -27,9 +27,9 @@
                 rgba(47, 48, 58, 0.4)
             ),
             image-set(
-                url('../../images/hero/tablet/Header_tal.jpg') 1x,
-                url('../../images/hero/tablet/Header_tal@2x.jpg') 2x,
-                url('../../images/hero/tablet/Header_tal@3x.jpg') 3x
+                url(../../images/hero/tablet/Header_tal.jpg) 1x,
+                url(../../images/hero/tablet/Header_tal@2x.jpg) 2x,
+                url(../../images/hero/tablet/Header_tal@3x.jpg) 3x
             );
     }
     @media screen and (min-width: $desktop-container-width) {
@@ -38,9 +38,9 @@
                 rgba(47, 48, 58, 0.4)
             ),
             image-set(
-                url('../../images/hero/desktop/Img.jpg') 1x,
-                url('../../images/hero/desktop/Img@2x.jpg') 2x,
-                url('../../images/hero/desktop/Img@3x.jpg') 3x
+                url(../../images/hero/desktop/Img.jpg) 1x,
+                url(../../images/hero/desktop/Img@2x.jpg) 2x,
+                url(../../images/hero/desktop/Img@3x.jpg) 3x
             );
     }
 }
